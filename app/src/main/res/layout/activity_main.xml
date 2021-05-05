@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="15" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="70"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="15" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/plus1"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:onClick="pluss"
+                android:text="+"
+                android:textSize="18sp"
+                app:backgroundTint="#FF9800" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/minus1"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:onClick="minuss"
+                android:text="-"
+                android:textSize="18sp"
+                app:backgroundTint="#FF9800" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/multiply1"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:onClick="multiplyy"
+                android:text="*"
+                android:textSize="18sp"
+                app:backgroundTint="#FF9800" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/divide1"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:onClick="dividee"
+                android:text="/"
+                android:textSize="18sp"
+                app:backgroundTint="#FF9800" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/ac"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:onClick="ac"
+                android:text="A/C"
+                android:textSize="18sp"
+                app:backgroundTint="#FFC107" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="100dp"
+                android:layout_height="55dp"
+                android:onClick="calculate"
+                android:text="="
+                android:textSize="18sp"
+                app:backgroundTint="#FFC107" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="236dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="9dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10" />
+
+                <Button
+                    android:id="@+id/credits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:onClick="credits"
+                    android:text="credits"
+                    android:textSize="18sp"
+                    app:backgroundTint="#FF3C00" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
